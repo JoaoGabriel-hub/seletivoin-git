@@ -1,14 +1,18 @@
-var num = prompt("Digite um número: ")
-num = parseInt(num)
+var cont = 0
 
-if (num % 3 == 0 && num % 5 == 0) {
-    console.log("fizzbuzz")
-}
-else {
-    if (num % 3 == 0) {
-        console.log("fizz")
+for (; cont < 5; cont++) {
+    var num = prompt("Digite um número: ")
+    num = parseInt(num)
+
+    if (num % 3 == 0 && num % 5 == 0) {
+        console.log("fizzbuzz")
     }
-    if (num % 5 == 0) {
-        console.log("buzz")
+    else {
+        if (num % 3 == 0) {
+            console.log("fizz")
+        }
+        if (num % 5 == 0) {
+            console.log("buzz")
+        }
     }
 }
