@@ -1,6 +1,4 @@
-var fahr = prompt("Temperatura em Fahrenheit: ")
-
-fahr = parseFloat(fahr)
+var fahr = parseFloat(prompt("Temperatura em Fahrenheit: "))
 
 celsius = (5 * (fahr - 32)) / 9
 
