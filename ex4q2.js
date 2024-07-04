@@ -961,5 +961,5 @@ const gods = [
     },
   ];
 
-  const midGods = gods.filter(god => god.roles.includes('Mid'));
-  midGods.forEach(god => console.log(god));
+  const mid = gods.filter(deusesMid => deusesMid.roles.includes('Mid'));
+  mid.forEach(deusesMid => console.log(deusesMid));
