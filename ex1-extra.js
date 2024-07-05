@@ -2,13 +2,20 @@
 negativos ou positivos (desconsidere os valores nulos). A seguir, mostre a
 quantidade de valores positivos digitados. */
 
-var n1 = parseFloat(prompt("Digite um numero: "))
-var n2 = parseFloat(prompt("Digite um numero: "))
-var n3 = parseFloat(prompt("Digite um numero: "))
-var n4 = parseFloat(prompt("Digite um numero: "))
-var n5 = parseFloat(prompt("Digite um numero: "))
-var n6 = parseFloat(prompt("Digite um numero: "))
-lista = []
-lista.push(n1, n2, n3, n4, n5, n6)
 
-console.log(lista)
+let contPos = 0;
+let lista = [];
+
+for (let i = 0; i < 6; i++) {
+    let valor = parseFloat(prompt("Digite um valor (positivo ou negativo):"));
+    lista.push(valor);
+}
+
+
+for (let i = 0; i < lista.length; i++) {
+    if (lista[i] > 0) {
+        contPos++;
+    }
+}
+
+console.log(contPos);
