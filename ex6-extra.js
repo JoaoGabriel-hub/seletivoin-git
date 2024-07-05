@@ -1,10 +1,10 @@
 const Finanças = {
-    despesas : [  230, 450, 310  ],
+    despesas : [  130, 450, 310  ],
     receita : [ 1200, 300 ]
 }
 
 function soma(lista) {
-    let soma = lista.reduce((soma, conta) => soma + conta, 0);
+    let soma = lista.reduce((soma, conta) => soma + conta);
     return soma;
 }
 
