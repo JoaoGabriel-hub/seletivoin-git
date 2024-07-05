@@ -48,4 +48,23 @@ booksByCategory.forEach(cat => {
             console.log('Livro de Augusto Cury: ',nomeLivro);
         }
     });
-});
+}); 
+
+
+function livrosPorAutor(nomeAutor) {
+    let livrosDoAutor = [];
+
+    booksByCategory.forEach(cat => {
+        let livros = cat.books;
+        livros.forEach(livro => {
+            let nome = livro.author;
+            if (nome === nomeAutor) 
+             {   livrosDoAutor.push(livro.title);  }})})
+        return livrosDoAutor; }
+
+let autorQ = prompt("Qual autor você deseja ver a bibliografia: ")
+let listaF = livrosPorAutor(autorQ)
+
+for (let i = 0; i < listaF.length; i++) {
+    console.log('Livro de ' + autorQ + ': ' + listaF[i])
+}
