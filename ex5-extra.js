@@ -16,7 +16,7 @@ const booksByCategory = [
     { title: "Os 7 hábitos das pessoas altamente eficazes",
     author: "Stephen R. Covey" } ] } ];
 
-/*let numCat = booksByCategory.length
+let numCat = booksByCategory.length
 console.log('Quantidade de categorias: ', numCat)
 
 booksByCategory.forEach(cat => {
@@ -24,7 +24,7 @@ booksByCategory.forEach(cat => {
     let livros = cat.books;
     let qtdLivros = livros.length;
     console.log('Quantidade de livros na categoria ' + catAtual + ': ', + qtdLivros)
-})*/
+})
 
 let listaAutor = []
 
@@ -38,4 +38,14 @@ booksByCategory.forEach(cat => {
     })
 })
 
-console.log(listaAutor.length)
+console.log('Quantidade de autores: ', listaAutor.length) 
+
+booksByCategory.forEach(cat => {
+    let livros = cat.books;
+    livros.forEach(livro => {
+        if (livro.author === "Augusto Cury") {
+            let nomeLivro = livro.title; 
+            console.log('Livro de Augusto Cury: ',nomeLivro);
+        }
+    });
+});
