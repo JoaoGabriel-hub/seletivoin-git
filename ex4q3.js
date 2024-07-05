@@ -960,3 +960,15 @@ const gods = [
       features: [],
     },
   ];
+
+const deusPanteao = gods.reduce((cont, deus) => {
+    // se o panteao do deus atual nao esta no contador, inicializo como um array vazio
+    if (!cont[deus.pantheon]) 
+    {  cont[deus.pantheon] = [];  }
+    // adc o deus atual no array do panteao correspondente
+    cont[deus.pantheon].push(deus);
+    // retorna o contador para a prox iteracao
+    return cont;
+    }, {}); // inicializa o contador como um objeto vazio
+
+console.log(deusPanteao);
