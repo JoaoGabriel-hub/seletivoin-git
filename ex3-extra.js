@@ -3,14 +3,7 @@ mostre os valores em ordem crescente, uma linha em branco e em
 seguida, os valores na sequência */
 
 
-let lista = [];
-
-
-for (let i = 0; i < 5; i++) {
-    let valor = parseFloat(prompt("Digite um valor: "));
-    lista.push(valor);
-}
-
+let lista = [891, -93, 62, 1, 5];
 let listaOrdem = lista.slice()
 
 console.log(listaOrdem.sort())
